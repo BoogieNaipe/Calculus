@@ -1,6 +1,6 @@
 # Calculus
 Calculadora para projeto - BESN2023.1
-------------------------------------------------------------------------------- As diretrizes eram: ---------------------------------------------------------------------------------
+----------------------------------------------------- As diretrizes eram: -----------------------------------------------------------
 
 Você deve criar um projeto web com base no exercício ‘Calculadora’ discutido em sala e  disponibilizado no GitHub da disciplina. Você deverá observar rigorosamente o conteúdo destas  instruções.  
 I. ASPECTOS GERAIS  
