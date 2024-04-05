@@ -1,16 +1,17 @@
 :root{
     --previous-text: #d9d9d9;
     --background-light: #e1e8f8;
-    --background-yellow: #feb800;
-    --background-calculator: #2d2f2f;
+    --background-azul: #444444;
+    --background-calculadora: #2d2f2f;
     --border-bottom-current-text: #f1b20e;
     --color-button: #eeeeee;
+    --igual-button: #1b5096;
 }
 body{
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: var(--background-yellow);
+    background-color: var(--background-azul);
 }
 *{
     box-sizing: border-box;
@@ -28,6 +29,60 @@ body{
     margin-top: 64px;
     border-radius: 10px;
     padding: 30px 20px;
-    background-color: var(--background-calculator);
+    background-color: var(--background-calculadora);
     box-shadow: 5px 5px 20px #2d2f2f;
+}
+.tela-calculadora-container-atual{
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    max-width: 350px;
+}
+.tela-calculadora-atual{
+    display: inline;
+    border-bottom: 2px solid var(--border-bottom-current-text);
+    color: var(--color-button);
+    font-size: 64px;
+    overflow: auto;
+}
+.tela-calculadora-atual::-webkit-scrollbar{
+    color: transparent;
+}
+.linha-teclado{
+    display: flex;
+}
+.botão{
+    background-color: var(--background-calculadora);
+    border: none;
+    color: var(--color-button);
+    width: 88px;
+    height: 88px;
+    font-size: 24px;
+    font-weight: regular;
+    border-radius: 10px;
+
+}
+.botão-igual{
+    background-color: var(--igual-button);
+    border: none;
+    color: var(--color-button);
+    width: 170px;
+    height: 88px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.botão:hover{
+    filter: brightness(150%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.botão-igual:hover{
+    filter: brightness(150%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.tela-calculadora-anterior{
+    text-align: right;
+    height: 20px;
+    color: var(--previous-text);
 }
